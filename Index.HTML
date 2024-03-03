@@ -58,6 +58,42 @@
             display: block;
             margin: 0 auto;
         }
+
+        /* New styles for added elements */
+        section {
+            margin: 20px 0;
+            padding: 10px;
+            background-color: #333;
+            border-radius: 8px;
+        }
+
+        ul {
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        time {
+            font-style: italic;
+            color: #888;
+        }
+
+        a {
+            color: #00f;
+        }
+
+        cite {
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        figure {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        figcaption {
+            color: #888;
+        }
     </style>
 </head>
 
@@ -74,14 +110,14 @@
 
     <div>
         <p>
-            Hi, my name is Alexandre Alves Pacheco. I am a student at Lusofona do Porto University, studying Videogame
+            Hiops, my name is Alexandre Alves Pacheco. I am a student at Lusofona do Porto University, studying Videogame
             Development and Multimedia Applications.
         </p>
         <p>
             I am a person who likes to stay at home, play video games, watch series, animes, and study programming.
         </p>
         <p>
-            I am 23 years old (turning 24 in July) and I studied Languages and Humanities in high school.
+            I am 23 years old (turning 24 in <time datetime="2024-07">July</time>) and I studied Languages and Humanities in high school.
         </p>
         <p>
             I played football for eleven years but had to stop due to time constraints. However, I have no regrets.
@@ -95,13 +131,38 @@
         <p>
             For now, that's it. I hope you enjoy my first attempt at making a website. :)
         </p>
+
+        <section>
+            <h3>
+                Hobbies and Interests:
+            </h3>
+            <ul>
+                <li>Exploring new technologies</li>
+                <li>Experimenting with code</li>
+                <li>Participating in game development projects</li>
+                <!-- Add more list items if needed -->
+            </ul>
+        </section>
+
+        <section>
+            <h3>
+                Connect with Me:
+            </h3>
+            <p>
+                If you want to learn more about my projects, feel free to <a href="https://example.com">visit my portfolio</a>.
+            </p>
+        </section>
     </div>
 
-    <audio controls src="Escape Beautiful Chill Music Mix.mp3"></audio>
+    <audio controls src="Escape Beautiful Chill Music Mix.mp3">
+        <p>Listen to my favorite chill music mix: <cite>Escape Beautiful Chill Music Mix</cite></p>
+    </audio>
     <br>
 
-    <img src="https://images.pexels.com/photos/91224/pexels-photo-91224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-        alt="300/300">
+    <figure>
+        <img src="https://images.pexels.com/photos/91224/pexels-photo-91224.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="300/300">
+        <figcaption>Captured by: John Doe</figcaption>
+    </figure>
 </body>
 
 </html>
